@@ -9,13 +9,9 @@ from streamlit_image_coordinates import streamlit_image_coordinates
 # ==========================================
 # STEP 1: WEB PAGE CONFIGURATION & TITLE
 # ==========================================
-st.set_page_config(page_title="Ultimate Shade Detector", layout="centered")
-st.title("🎨 Ultimate Color Shade Detector")
-st.write("Identify over 865+ unique shades using your webcam or an uploaded picture!")
+st.set_page_config(page_title="Color Detector", layout="centered")
+st.title("Color Identification")
 
-# ==========================================
-# STEP 2: DOWNLOAD & LOAD THE SHADE DATASET
-# ==========================================
 # ==========================================
 # STEP 2: LOAD THE LOCAL SHADE DATASET
 # ==========================================
@@ -107,7 +103,7 @@ if target_image is not None:
             
             # --- DISPLAY THE RESULT MATCH BOX ---
             st.markdown("---")
-            st.subheader("🔍 Analysis Results")
+            st.subheader("Analysis Results")
             
             col1, col2 = st.columns(2)
             with col1:
@@ -124,7 +120,7 @@ if target_image is not None:
             
             # --- ACCURACY ACCORDION BUTTON ---
             st.markdown(" ")
-            if st.button("📊 Show Identification Accuracy"):
+            if st.button("Show Identification Accuracy"):
                 if accuracy_percentage > 90:
                     st.success(f"Excellent Match! The system is **{accuracy_percentage}%** confident this shade is **{shade_name}**.")
                 elif accuracy_percentage > 75:
