@@ -16,6 +16,18 @@ st.write("Identify over 865+ unique shades using your webcam or an uploaded pict
 # ==========================================
 # STEP 2: DOWNLOAD & LOAD THE SHADE DATASET
 # ==========================================
+# ==========================================
+# STEP 2: LOAD THE LOCAL SHADE DATASET
+# ==========================================
+CSV_FILE = "colors.csv"
+
+@st.cache_data
+def load_dataset():
+    # Read the file directly from your repository without downloading anything
+    return pd.read_csv(CSV_FILE, names=["color_name", "hex", "R", "G", "B"], header=None)
+
+color_df = load_dataset()
+
 CSV_URL = "https://githubusercontent.com"
 CSV_FILE = "colors.csv"
 
