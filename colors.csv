@@ -1,0 +1,60 @@
+pure_black,Pure Black,#000000,0,0,0
+pure_white,Pure White,#ffffff,255,255,255
+charcoal,Charcoal,#36454f,54,69,79
+slate_grey,Slate Grey,#708090,112,128,144
+light_grey,Light Grey,#d3d3d3,211,211,211
+off_white,Off-White,#f8f8ff,248,248,255
+crimson,Crimson,#dc143c,220,20,60
+scarlet,Scarlet,#ff2400,255,36,0
+burgundy,Burgundy,#800020,128,0,32
+ruby_red,Ruby Red,#e0115f,224,17,95
+coral_red,Coral Red,#ff4040,255,64,64
+maroon,Maroon,#800000,128,0,0
+navy_blue,Navy Blue,#000080,0,0,128
+sky_blue,Sky Blue,#87ceeb,135,206,235
+royal_blue,Royal Blue,#4169e1,65,105,225
+midnight_blue,Midnight Blue,#191970,25,25,112
+baby_blue,Baby Blue,#89cff0,137,207,240
+teal,Teal,#008080,0,128,128
+turquoise,Turquoise,#40e0d0,64,224,208
+cyan,Cyan,#00ffff,0,255,255
+periwinkle,Periwinkle,#ccccff,204,204,255
+olive_green,Olive Green,#808000,128,128,0
+mint_green,Mint Green,#98ff98,152,255,152
+lime_green,Lime Green,#32cd32,50,205,50
+emerald_green,Emerald Green,#50c878,80,200,120
+forest_green,Forest Green,#228b22,34,139,34
+army_green,Army Green,#4b5320,75,83,32
+sage_green,Sage Green,#87a96b,135,169,107
+gold,Gold,#ffd700,255,215,0
+mustard_yellow,Mustard Yellow,#ffdb58,255,219,88
+lemon_yellow,Lemon Yellow,#fff700,255,247,0
+cream,Cream,#fffdd0,255,253,208
+beige,Beige,#f5f5dc,245,245,220
+khaki,Khaki,#c3b091,195,176,145
+tangerine,Tangerine,#f28500,242,133,0
+apricot,Apricot,#fbceb1,251,206,177
+chocolate_brown,Chocolate Brown,#7b3f00,123,63,0
+coffee_brown,Coffee Brown,#4a2c2a,74,44,42
+tan,Tan,#d2b48c,210,180,140
+bronze,Bronze,#cd7f32,205,127,50
+lavender,Lavender,#e6e6fa,230,230,250
+magenta,Magenta,#ff00ff,255,0,255
+plum,Plum,#8e4585,142,69,133
+orchid,Orchid,#da70d6,218,112,214
+coral_pink,Coral Pink,#f88379,248,131,121
+rose_pink,Rose Pink,#ff66cc,255,102,204
+salmon_pink,Salmon Pink,#ff8c69,255,140,105
+hot_pink,Hot Pink,#ff69b4,255,105,180
+violet,Violet,#ee82ee,238,130,238
+peach,Peach,#ffcba4,255,203,164
+rust,Rust,#b7410e,183,65,14
+lilac,Lilac,#c8a2c8,200,162,200
+mauve,Mauve,#e0b0ff,224,176,255
+indigo,Indigo,#4b0082,75,0,130
+sapphire,Sapphire,#0f52ba,15,82,186
+amber,Amber,#ffbf00,255,191,0
+terracotta,Terracotta,#e2725b,226,114,91
+ivory,Ivory,#fffff0,255,255,240
+denim,Denim,#1560bd,21,96,189
+copper,Copper,#b87333,184,115,51
