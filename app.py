@@ -113,6 +113,8 @@ if target_image is not None:
             with col1:
                 # Creates a visual colored square tile of the color you clicked
                 st.markdown(f"""
+                col1, col2 = st.columns()
+
                 <div style="background-color: {hex_color}; width: 100px; height: 100px; 
                 border-radius: 10px; border: 3px solid #fff; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);">
                 </div>
