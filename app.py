@@ -55,7 +55,7 @@ def identify_shade(r, g, b):
 
 # STEP 4: SIDEBAR & USER INPUT INTERFACE
 mode = st.sidebar.radio("Choose Input Method:", ("📤 Upload an Image", "📷 Take a Webcam Photo"))
-
+zoom_factor = st.sidebar.slider("Image zoom level(%)", min_value=100, max_valu=400, value=100, step=25)
 target_image = None
 
 if mode == "📤 Upload an Image":
@@ -70,6 +70,19 @@ elif mode == "📷 Take a Webcam Photo":
 
 # STEP 5: INTERACTIVE CLICKING & ACCURACY LOGIC
 if target_image is not None:
+        # Added right inside the image validation gate:
+    if zoom_factor > 100:
+        width, height = target_image.size
+        crop_ratio = 100 / zoom_factor
+        new_width = int(width * crop_ratio)
+        new_height = int(height * crop_ratio) if height >= new_width else int(height * (100 / zoom_factor))
+        center_x, center_y = width // 2, height // 2
+        left = max(0, center_x - (new_width // 2))
+        top = max(0, center_y - (new_height // 2))
+        right = min(width, center_x + (new_width // 2))
+        bottom = min(height, center_y + (new_height // 2))
+        target_image = target_image.crop((left, top, right, bottom))
+
     st.info("👇 Click directly on any object inside the image below to identify its shade!")
     
     # Scale image nicely to fit nicely on screens
