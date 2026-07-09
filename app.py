@@ -6,15 +6,11 @@ import os
 import requests
 from streamlit_image_coordinates import streamlit_image_coordinates
 
-# ==========================================
 # STEP 1: WEB PAGE CONFIGURATION & TITLE
-# ==========================================
 st.set_page_config(page_title="Color Detector", layout="centered")
 st.title("Color Identification")
 
-# ==========================================
 # STEP 2: LOAD THE LOCAL SHADE DATASET
-# ==========================================
 CSV_FILE = "colors.csv"
 
 @st.cache_data
@@ -38,9 +34,7 @@ def load_dataset():
 
 color_df = load_dataset()
 
-# ==========================================
 # STEP 3: COLOR IDENTIFICATION MATH ENGINE
-# ==========================================
 def identify_shade(r, g, b):
     """Finds the closest color shade using 3D Euclidean distance."""
     # Measure the distance between your clicked pixel and all 865 shades
@@ -59,9 +53,7 @@ def identify_shade(r, g, b):
     
     return color_df.loc[min_idx, 'color_name'], round(accuracy, 2)
 
-# ==========================================
 # STEP 4: SIDEBAR & USER INPUT INTERFACE
-# ==========================================
 mode = st.sidebar.radio("Choose Input Method:", ("📤 Upload an Image", "📷 Take a Webcam Photo"))
 
 target_image = None
@@ -76,9 +68,7 @@ elif mode == "📷 Take a Webcam Photo":
     if webcam_file is not None:
         target_image = Image.open(webcam_file).convert("RGB")
 
-# ==========================================
 # STEP 5: INTERACTIVE CLICKING & ACCURACY LOGIC
-# ==========================================
 if target_image is not None:
     st.info("👇 Click directly on any object inside the image below to identify its shade!")
     
@@ -116,7 +106,7 @@ if target_image is not None:
             
             with col2:
                 st.markdown(f"**Identified Shade:** `{shade_name}`")
-                st.markdown(f"**RGB Value:** `[{r}, {g}, {b}]` | **HEX Code:** `{hex_color}`")
+                st.markdown(f"**HEX Code:** `{hex_color}`")
             
             # --- ACCURACY ACCORDION BUTTON ---
             st.markdown(" ")
