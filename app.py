@@ -55,7 +55,7 @@ def identify_shade(r, g, b):
 
 # STEP 4: SIDEBAR & USER INPUT INTERFACE
 mode = st.sidebar.radio("Choose Input Method:", ("📤 Upload an Image", "📷 Take a Webcam Photo"))
-zoom_factor = st.sidebar.slider("Image zoom level(%)", min_value=100, max_valu=400, value=100, step=25)
+zoom_factor = st.sidebar.slider("Image zoom level(%)", min_value=100, max_value=400, value=100, step=25)
 target_image = None
 
 if mode == "📤 Upload an Image":
