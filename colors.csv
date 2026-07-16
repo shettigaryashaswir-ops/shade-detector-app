@@ -37,7 +37,6 @@ apricot,Apricot,#fbceb1,251,206,177
 chocolate_brown,Chocolate Brown,#7b3f00,123,63,0
 coffee_brown,Coffee Brown,#4a2c2a,74,44,42
 tan,Tan,#d2b48c,210,180,140
-bronze,Bronze,#cd7f32,205,127,50
 lavender,Lavender,#e6e6fa,230,230,250
 magenta,Magenta,#ff00ff,255,0,255
 plum,Plum,#8e4585,142,69,133
@@ -57,5 +56,4 @@ amber,Amber,#ffbf00,255,191,0
 terracotta,Terracotta,#e2725b,226,114,91
 ivory,Ivory,#fffff0,255,255,240
 denim,Denim,#1560bd,21,96,189
-copper,Copper,#b87333,184,115,51
-
+yellow,yellow,#FFFF00,255,255,0
