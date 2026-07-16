@@ -4,7 +4,7 @@ charcoal grey,Charcoal grey,#36454f,54,69,79
 slate_grey,Slate Grey,#708090,112,128,144
 light_grey,Light Grey,#d3d3d3,211,211,211
 off_white,Off-White,#f8f8ff,248,248,255
-crimson,Crimson,#dc143c,220,20,60
+crimson_red,Crimson red,#dc143c,220,20,60
 scarlet,Scarlet,#ff2400,255,36,0
 burgundy,Burgundy,#800020,128,0,32
 ruby_red,Ruby Red,#e0115f,224,17,95
@@ -57,3 +57,4 @@ terracotta,Terracotta,#e2725b,226,114,91
 ivory,Ivory,#fffff0,255,255,240
 denim,Denim,#1560bd,21,96,189
 yellow,yellow,#FFFF00,255,255,0
+red,red,#FF0000,255,0,0
